@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Fundamental_2</string>
+
+    <string name="login">Name</string>
+    <string name="url">Link</string>
+    <string name="search">Search</string>
+    <string name="menu_1">Like</string>
+    <string name="menu_2">Mode Gelap</string>
+    <string name="Cari_nama">Cari Nama</string>
+    <string name="username">Username</string>
+    <string name="bio">Bio</string>
+    <string name="zero">0</string>
+    <string name="repo">Repository</string>
+    <string name="gists">gists</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+</resources>
