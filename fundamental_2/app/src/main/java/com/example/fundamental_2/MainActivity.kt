@@ -18,6 +18,7 @@ import com.example.fundamental_2.response.UserResponse
 import com.example.fundamental_2.viewmodel.MainViewModel
 import androidx.appcompat.widget.SearchView
 import android.widget.SearchView.OnQueryTextListener;
+import androidx.annotation.StringRes
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 
@@ -80,6 +81,7 @@ class MainActivity : AppCompatActivity() {
             items.clear()
             items.addAll(listUserItems)
         }
+
         val adapter = MainAdapter(items)
 
         binding.rvGit.adapter = adapter
@@ -102,5 +104,7 @@ class MainActivity : AppCompatActivity() {
         intent.putExtra(DetailActivity.EXTRA_USER,data.login)
         startActivity(intent)
     }
+
+
 
 }

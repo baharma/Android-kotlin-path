@@ -20,8 +20,6 @@ class MainViewModel:ViewModel() {
     private val _listUserGit = MutableLiveData<ArrayList<ListUserItems>>()
     val listUserItems : MutableLiveData<ArrayList<ListUserItems>> = _listUserGit
 
-
-
      fun searchGitUser(name : String){
         _loading.value = true
         val client = ApiConfig.getApiService().searchUser(name)

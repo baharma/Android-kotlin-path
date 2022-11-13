@@ -3,6 +3,8 @@ package com.example.fundamental_2.api
 
 import com.example.fundamental_2.BuildConfig
 import com.example.fundamental_2.response.DetailResponse
+import com.example.fundamental_2.response.FollowersResponse
+import com.example.fundamental_2.response.ListUserItems
 import com.example.fundamental_2.response.UserResponse
 import retrofit2.Call
 import retrofit2.http.GET
@@ -25,5 +27,16 @@ interface ApiService {
         @Path("login") login: String
     ):Call<DetailResponse>
 
+    @GET("users/{login}/followers")
+    @Headers("Authorization: token ${BuildConfig.GITHUB_TOKEN}")
+    fun getFollowers(
+        @Path("login") login: String
+    ):Call<List<ListUserItems>>
+
+    @GET("users/{login}/following")
+    @Headers("Authorization: token ${BuildConfig.GITHUB_TOKEN}")
+    fun getFollowing(
+        @Path("login") login: String
+    ):Call<List<ListUserItems>>
 
 }

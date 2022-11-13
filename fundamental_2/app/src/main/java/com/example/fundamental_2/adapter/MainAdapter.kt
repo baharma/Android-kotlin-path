@@ -1,5 +1,6 @@
 package com.example.fundamental_2.adapter
 
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -10,6 +11,7 @@ import com.example.fundamental_2.response.ListUserItems
 
 class MainAdapter(private val listGithub : List<ListUserItems>):RecyclerView.Adapter<MainAdapter.ViewHolder>() {
     private lateinit var onItemClickCallback  : OnItemClickCallback
+
     inner class ViewHolder( val binding: RowItemsGithubBinding):RecyclerView.ViewHolder(binding.root) {
         fun bind(listUser : ListUserItems){
             binding.apply {
@@ -24,6 +26,7 @@ class MainAdapter(private val listGithub : List<ListUserItems>):RecyclerView.Ada
             }
         }
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val binding = RowItemsGithubBinding.inflate(LayoutInflater.from(parent.context),parent,false)
