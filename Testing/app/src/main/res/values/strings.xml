@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Testing</string>
-
+    <string name="app_name">Testing_Espresso</string>
     <string name="width">Lebar</string>
     <string name="result">Hasil</string>
     <string name="calculate_volume">Hitung Volume</string>

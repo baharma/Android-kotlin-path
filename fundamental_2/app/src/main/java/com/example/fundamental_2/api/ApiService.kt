@@ -20,7 +20,6 @@ interface ApiService {
         @Query("q") login: String
     ):Call<UserResponse>
 
-
     @GET("users/{login}")
     @Headers("Authorization: token ${BuildConfig.GITHUB_TOKEN}")
     fun getDetailUser(
